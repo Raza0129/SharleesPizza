@@ -1,0 +1,275 @@
+.collapse{
+    /* padding-right: 105px; */
+    margin-left: 45%;
+    color: white;
+    /* background-color: black; */
+}   
+.carousel{
+    margin-top: -5px;
+}
+#Menu{
+    text-align: center;
+    padding: 60px;
+}
+.about_us{
+    text-align: center;
+    font-size: 17px;
+}
+#about_h{
+    text-align: center;
+    padding: 60px;
+    margin-top: -5%;
+}
+.map{
+    text-align: center;
+    padding: 60px;
+}
+.map1{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contect{
+    align-items: center;
+}
+svg {
+	height: 23rem;
+	margin-right: 4rem;
+}
+
+#envelope {
+  animation: float 2s ease-in-out infinite;
+}
+
+#star1, #star2, #star3, #star4, #star5, #star6 {
+  animation: blink 1s ease-in-out infinite;
+}
+#star2 { animation-delay: 100ms; }
+#star3 { animation-delay: 500ms; }
+#star4 { animation-delay: 700ms; }
+#star5 { animation-delay: 300ms; }
+#star6 { animation-delay: 200ms }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+	height: 100vh;
+}
+
+form {
+	min-width: 25rem;
+	
+	.title {
+		font-family: 'Pacifico', cursive;
+		color: #212529;
+		font-size: 2.5rem;
+	}
+	
+  .form-control {
+    background-color: #f2f6f8;
+		border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		
+    &.thick {
+      height: 3.3rem;
+      padding: .5rem 3.5rem;
+    }
+		
+		&:focus {
+			background-color: #f2f6f8;
+			border: none;
+			box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		}
+  }
+	
+	.message .form-control {
+			padding: .5rem 1.8rem;
+	}
+	
+  ::placeholder {
+    font-family: 'Quicksand', sans-serif;
+		font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    left: 0;
+  }
+	
+  input,
+  textarea {
+		font-family: 'Quicksand', sans-serif;
+    color: #212529;
+    font-size: 1.1rem;
+  }
+	
+  .icon {
+    color: #57565c;
+    height: 1.3rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.1rem;
+  }
+}
+
+.btn.btn-primary {
+  font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+  border: 0;
+  border-radius: 3rem;
+  background-image:linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover:enabled {
+  box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+}
+.footer{
+  padding-left: 200px;
+  color: #212529;
+}
+.box {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  float: left;
+  padding: 60px 50px 40px 50px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  z-index: 5;
+
+  &.back {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    top: -20px;
+    opacity: .8;
+    z-index: -1;
+  }
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    background: rgba(255, 255, 255, 0.6);
+    left: 0;
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    z-index: -1;
+  }
+}
+
+.overbox .title {
+  color: #fff;
+
+  &:before {
+    background: #fff;
+  }
+}
+
+.title {
+  width: 100%;
+  float: left;
+  line-height: 46px;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ED2553;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    background: #ED2553;
+  }
+}
+
+.input {
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  label, input, .spin {
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media (max-width: 768px) {
+  /* CSS for tablets or smaller devices */
+}
+
+@media (max-width: 576px) {
+  /* CSS for smartphones or smaller devices */
+}
+
+/* Default styles */
+
+/* For larger desktops */
+@media (min-width: 1200px) {
+  /* Your CSS rules for larger desktop screens */
+}
+
+/* For desktops and laptops */
+@media (max-width: 1199px) {
+  /* Your CSS rules for desktop and laptop screens */
+}
+
+/* For smaller laptops and tablets */
+@media (max-width: 991px) {
+  /* Your CSS rules for smaller laptops and tablets */
+}
+
+/* For tablets and large smartphones */
+@media (max-width: 767px) {
+  /* Your CSS rules for tablets and large smartphones */
+}
+
+/* For smaller smartphones */
+@media (max-width: 575px) {
+  /* Your CSS rules for smaller smartphones */
+}
